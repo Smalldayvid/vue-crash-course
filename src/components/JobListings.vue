@@ -1,9 +1,9 @@
 <script setup>
-import { RouterLink } from 'vue-router';
-import JobListing from './JobListing.vue';
-import { reactive, defineProps, onMounted } from 'vue';
-import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
 import axios from 'axios';
+import { defineProps, onMounted, reactive } from 'vue';
+import { RouterLink } from 'vue-router';
+import PulseLoader from 'vue-spinner/src/PulseLoader.vue';
+import JobListing from './JobListing.vue';
 
 defineProps({
     limit: Number,
